@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+
+import Hero from "./components/hero/Hero";
+import { GlobalStyle } from "./components/globalsyles/Globalstyles.styled";
+import Cursor from "./components/cursor/Cursor";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import "./locomotive-scroll.css";
+import { useRef } from "react";
 
 function App() {
+  const containerRef = useRef();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LocomotiveScrollProvider
+      options={{
+        smooth: true,
+        // tablets and mobile
+        // smartphone: { smooth: true },
+        // tablet: { smooth: true },
+      }}
+      watch={
+        [
+          //..all the dependencies you want to watch to update the scroll.
+          //  Basicaly, you would want to watch page/location changes
+          //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
+        ]
+      }
+      containerRef={containerRef}>
+      <main data-scroll-container ref={containerRef}>
+        <GlobalStyle />
+        <Cursor />
+        <Hero />
+      </main>
+    </LocomotiveScrollProvider>
   );
 }
 
