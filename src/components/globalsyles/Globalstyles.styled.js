@@ -32,17 +32,30 @@ export const Styledelements = {
     font-family: var(--roboto);
     font-size: 16px;
     border-radius: 24px;
+    text-transform: capitalize;
     cursor: pointer;
+    width: fit-content;
   `,
-  // headings
+  // typography
   Heading1: styled.h1`
     font-family: var(--oswald);
     text-transform: capitalize;
     font-weight: 800;
     font-size: 64px;
-    line-height: 32px;
+    line-height: 72px;
     span {
       color: var(--primary);
     }
+  `,
+  Heading3: styled.h3`
+    font-family: var(--roboto);
+    font-weight: 900;
+  `,
+  Paragraph: styled.p`
+    font-family: var(--roboto);
+    color: var(--fontlight);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   `,
 };

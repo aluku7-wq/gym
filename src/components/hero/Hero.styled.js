@@ -20,18 +20,15 @@ export const Container = styled.div`
       height: fit-content;
     }
     .text {
-      /* flex-basis: 30%; */
+      display: flex;
+      flex-direction: column;
     }
     p {
       max-width: 420px;
-      font-family: var(--roboto);
-      color: var(--fontlight);
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+      margin-top: 32px;
     }
     button {
-      margin-top: 24px;
+      margin-top: 56px;
     }
     .sliders {
       display: flex;

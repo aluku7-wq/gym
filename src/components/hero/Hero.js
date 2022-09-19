@@ -20,11 +20,11 @@ const Hero = () => {
             stay <span>healthy</span>
           </Styledelements.Heading1>
           <Styledelements.Heading1>be safe</Styledelements.Heading1>
-          <p>
+          <Styledelements.Paragraph>
             Instead of just being an another gym equipment retailor, our
             founderswanted to be the best in the industry to set minds doing so
             wonderfull job
-          </p>
+          </Styledelements.Paragraph>
           <Styledelements.Button
             onMouseEnter={() => dispatch({ type: "SHRINK" })}
             onMouseLeave={() => dispatch({ type: "EXPAND" })}>

@@ -6,6 +6,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import "./locomotive-scroll.css";
 import { useRef } from "react";
 import { Statemanager } from "./components/statemanager/Statemanager";
+import Classes from "./components/classes/Classes";
 
 function App() {
   const containerRef = useRef();
@@ -29,6 +30,7 @@ function App() {
         <main data-scroll-container ref={containerRef}>
           <Cursor />
           <Hero />
+          <Classes />
         </main>
       </LocomotiveScrollProvider>
     </Statemanager>
