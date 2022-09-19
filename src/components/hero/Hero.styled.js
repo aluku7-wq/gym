@@ -17,9 +17,10 @@ export const Container = styled.div`
     img {
       width: 20vw;
       flex-basis: 20%;
+      height: fit-content;
     }
     .text {
-      flex-basis: 30%;
+      /* flex-basis: 30%; */
     }
     p {
       max-width: 420px;

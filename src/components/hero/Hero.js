@@ -3,8 +3,13 @@ import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { Container } from "./Hero.styled";
 import { Styledelements } from "../globalsyles/Globalstyles.styled";
 import Header from "../header/Header";
+import { useContext } from "react";
+import { GymContext } from "../statemanager/Statemanager";
 
 const Hero = () => {
+  const globalstate = useContext(GymContext);
+  const dispatch = globalstate.cursorDispatch;
+
   return (
     <Container data-scroll-section>
       <Header />
@@ -20,12 +25,22 @@ const Hero = () => {
             founderswanted to be the best in the industry to set minds doing so
             wonderfull job
           </p>
-          <Styledelements.Button>learn more</Styledelements.Button>
+          <Styledelements.Button
+            onMouseEnter={() => dispatch({ type: "SHRINK" })}
+            onMouseLeave={() => dispatch({ type: "EXPAND" })}>
+            learn more
+          </Styledelements.Button>
           <div className="sliders">
-            <div className="slider">
+            <div
+              className="slider"
+              onMouseEnter={() => dispatch({ type: "SHRINK" })}
+              onMouseLeave={() => dispatch({ type: "EXPAND" })}>
               <MdArrowBackIos />
             </div>
-            <div className="slider">
+            <div
+              className="slider"
+              onMouseEnter={() => dispatch({ type: "SHRINK" })}
+              onMouseLeave={() => dispatch({ type: "EXPAND" })}>
               <MdArrowForwardIos />
             </div>
           </div>

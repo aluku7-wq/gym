@@ -1,10 +1,11 @@
 /** @format */
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { GymContext } from "../statemanager/Statemanager";
 import { Container } from "./Cursor.styled";
 
-const Cursor = ({ scaling }) => {
+const Cursor = () => {
   const [largecircle, setlargecircle] = useState({ x: 0, y: 0 });
   const [smallcircle, setsmallcircle] = useState({ x: 0, y: 0 });
 
@@ -19,6 +20,8 @@ const Cursor = ({ scaling }) => {
       window.removeEventListener("mousemove", mousemove);
     };
   }, []);
+  const globalstate = useContext(GymContext);
+  const scaling = globalstate.cursorstate;
 
   return (
     <Container>
