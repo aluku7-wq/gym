@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 export const Container = styled.div`
-  padding-bottom: 128px;
+  padding-bottom: 48px;
   .body {
     display: flex;
     padding: 128px 200px;
