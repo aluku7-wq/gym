@@ -14,8 +14,10 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     gap: 10vw;
+    margin-top: 8vh;
     img {
       width: 20vw;
+      margin-left: 5vw;
       flex-basis: 20%;
       height: fit-content;
     }

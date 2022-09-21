@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: 56px 128px;
   justify-content: space-between;
   align-items: baseline;
-  max-width: 1200px;
+  max-width: 1900px;
 
   .navitems {
     display: flex;
