@@ -21,7 +21,7 @@ export const Container = styled.div`
     grid-template-columns: repeat(3, 1fr);
     column-gap: 32px;
     row-gap: 64px;
-    padding: 64px 220px;
+    padding: 88px 220px;
 
     .card {
       display: flex;
