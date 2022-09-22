@@ -5,6 +5,7 @@ import { Container } from "./Classes.styled";
 import { FaStar } from "react-icons/fa";
 import { useContext } from "react";
 import { GymContext } from "../statemanager/Statemanager";
+import Underline from "../underline/Underline";
 
 const Classes = () => {
   const globalstate = useContext(GymContext);
@@ -63,11 +64,7 @@ const Classes = () => {
           </div>
         </div>
       </div>
-      <div className="underline">
-        <div className="section1"></div>
-        <div className="section2"></div>
-        <div className="section1"></div>
-      </div>
+      <Underline />
     </Container>
   );
 };

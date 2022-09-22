@@ -15,11 +15,12 @@ export const Container = styled.div`
     justify-content: center;
     gap: 10vw;
     margin-top: 8vh;
-    img {
-      width: 20vw;
+    .image {
+      max-height: 80vh;
       margin-left: 5vw;
-      flex-basis: 20%;
-      height: fit-content;
+      img {
+        width: 100%;
+      }
     }
     .text {
       display: flex;

@@ -5,8 +5,6 @@ export const Container = styled.div`
   display: flex;
   gap: 48px;
   flex-direction: column;
-
-  padding-bottom: 128px;
   background: linear-gradient(to bottom, white, #f0eeff);
 
   .top {
@@ -19,6 +17,7 @@ export const Container = styled.div`
     h1 {
       font-size: 48px;
       font-family: var(--roboto);
+      font-weight: 700;
       span {
         color: black;
         display: inline-block;

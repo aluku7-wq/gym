@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         --overlay3: rgb(239,236,255);
         --overlay4: rgba(239,236,255,0.9);
         --fontlight: #8b8b93;
+        --fontgray:#818181;
         /* font-family */
         --oswald: 'Oswald', sans-serif;
         --roboto: 'Roboto', sans-serif;

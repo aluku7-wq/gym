@@ -14,7 +14,10 @@ const Hero = () => {
     <Container data-scroll-section>
       <Header />
       <div className="body">
-        <img src="/images/background/bg7.png" alt="" />
+        <div className="image">
+          <img src="/images/background/bg7.png" alt="" />
+        </div>
+
         <div data-scroll data-scroll-speed="2" className="text">
           <Styledelements.Heading1>
             stay <span>healthy</span>

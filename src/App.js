@@ -8,6 +8,7 @@ import { useRef } from "react";
 import { Statemanager } from "./components/statemanager/Statemanager";
 import Classes from "./components/classes/Classes";
 import About from "./components/about/About";
+import Schedule from "./components/schedule/Schedule";
 
 function App() {
   const containerRef = useRef();
@@ -33,6 +34,7 @@ function App() {
           <Hero />
           <Classes />
           <About />
+          <Schedule />
         </main>
       </LocomotiveScrollProvider>
     </Statemanager>
