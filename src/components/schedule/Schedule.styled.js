@@ -4,10 +4,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 128px 0;
+  padding: 80px 0;
   h1 {
-    margin-left: 256px;
+    margin-left: 220px;
     font-weight: 700;
+    font-size: 48px;
+    text-transform: capitalize;
     span {
       display: inline-block;
       border-bottom: 4px solid var(--secondary);
