@@ -9,6 +9,7 @@ import { Statemanager } from "./components/statemanager/Statemanager";
 import Classes from "./components/classes/Classes";
 import About from "./components/about/About";
 import Schedule from "./components/schedule/Schedule";
+import Video from "./components/video/Video";
 
 function App() {
   const containerRef = useRef();
@@ -35,6 +36,7 @@ function App() {
           <Classes />
           <About />
           <Schedule />
+          <Video />
         </main>
       </LocomotiveScrollProvider>
     </Statemanager>
