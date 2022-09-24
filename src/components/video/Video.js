@@ -2,7 +2,6 @@
 
 import { Container } from "./Video.styled";
 import React, { useEffect, useRef, useState } from "react";
-import ReactPlayer from "react-player";
 import { FaPlay } from "react-icons/fa";
 import Underline from "../underline/Underline";
 
