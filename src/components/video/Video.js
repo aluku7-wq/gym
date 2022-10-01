@@ -18,7 +18,7 @@ const Video = () => {
   const burners = ["burner1.png", "burner2.png", "burner3.png", "burner4.png"];
 
   return (
-    <Container data-scroll-section>
+    <Container>
       <div className="video">
         <video
           // width="900"

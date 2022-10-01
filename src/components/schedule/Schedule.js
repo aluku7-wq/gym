@@ -50,7 +50,7 @@ const Schedule = () => {
     },
   ];
   return (
-    <Container data-scroll-section>
+    <Container>
       <Styledelements.Heading1>
         <span>ou</span>r schedule
       </Styledelements.Heading1>

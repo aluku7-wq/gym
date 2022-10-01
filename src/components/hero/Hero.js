@@ -11,7 +11,7 @@ const Hero = () => {
   const dispatch = globalstate.cursorDispatch;
 
   return (
-    <Container data-scroll-section>
+    <Container>
       <Header />
       <div className="body">
         <div className="image">

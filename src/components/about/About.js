@@ -10,7 +10,7 @@ import { GiCoffeeCup } from "react-icons/gi";
 
 const About = () => {
   return (
-    <Container data-scroll-section>
+    <Container>
       <div className="top">
         <Styledelements.Heading1>
           <span>Ab</span>out

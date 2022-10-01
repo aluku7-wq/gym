@@ -49,7 +49,7 @@ export const Styledelements = {
     }
   `,
   Heading3: styled.h3`
-    font-family: var(--roboto);
+    font-family: var(--oswald);
     font-weight: 900;
   `,
   Paragraph: styled.p`

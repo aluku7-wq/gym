@@ -11,7 +11,7 @@ const Classes = () => {
   const globalstate = useContext(GymContext);
   const dispatch = globalstate.cursorDispatch;
   return (
-    <Container data-scroll-section>
+    <Container>
       <div className="body">
         <div className="text">
           <Styledelements.Heading1>
