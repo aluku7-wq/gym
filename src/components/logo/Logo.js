@@ -10,7 +10,7 @@ const Logo = () => {
     img {
       height: 36px;
     }
-    p {
+    h4 {
       margin-left: -24px;
       font-family: var(--oswald);
       font-weight: 700;
@@ -28,7 +28,7 @@ const Logo = () => {
   return (
     <Container>
       <img src="/images/logo/logo.png" alt="" />
-      <p>FITHUB</p>
+      <h4>FITHUB</h4>
       <span></span>
     </Container>
   );

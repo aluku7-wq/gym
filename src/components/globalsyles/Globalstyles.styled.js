@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         --success: #27ae60;
         --warning: #e2b93b;
         --error: #eb5757;
-        --overlay: rgba(170,153,219,1);
+        --overlay: rgba(170,153,219,0.5);
         --overlay2: rgba(170,153,219,0.3);
         --overlay3: rgb(239,236,255);
         --overlay4: rgba(239,236,255,0.9);

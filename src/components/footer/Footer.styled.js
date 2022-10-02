@@ -8,7 +8,6 @@ export const Container = styled.div`
   .top {
     background: url("./images/background/footer.jpg");
     background-size: 100% 100%;
-    margin-bottom: 100px;
 
     .overlay {
       padding: 64px 0;
@@ -68,6 +67,93 @@ export const Container = styled.div`
         align-items: center;
         color: var(--secondary);
       }
+    }
+  }
+  .bottom {
+    padding: 64px 200px;
+    background: linear-gradient(to bottom, #fff, var(--overlay2));
+    .body {
+      display: flex;
+      .section {
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .schedule {
+          display: flex;
+          gap: 8px;
+          margin-top: 24px;
+          .icon {
+            color: var(--secondary);
+            font-size: 32px;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+        }
+        h3 {
+          text-transform: capitalize;
+          span {
+            border-bottom: 4px solid var(--secondary);
+          }
+        }
+        p {
+          color: var(--fontgray);
+          font-size: 14px;
+          font-weight: 500;
+          max-width: 90%;
+        }
+        .contacts {
+          display: flex;
+          gap: 8px;
+
+          .icon {
+            width: 30px;
+            height: 30px;
+            background-color: var(--secondary);
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border-radius: 50%;
+          }
+          p {
+            max-width: 200px;
+          }
+        }
+      }
+      .section:nth-of-type(1) {
+        p {
+          max-width: 80%;
+        }
+        h3 {
+          font-size: 16px;
+          color: var(--fontgray);
+        }
+      }
+      .section:nth-of-type(2),
+      .section:nth-of-type(3) {
+        flex-basis: 30%;
+
+        h3 {
+          margin-bottom: 8px;
+        }
+      }
+      .section:nth-of-type(3) {
+        gap: 16px;
+      }
+    }
+    .copyright {
+      display: flex;
+      justify-content: center;
+      color: var(--fontgray);
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 40px;
+      font-weight: 700;
     }
   }
 `;
