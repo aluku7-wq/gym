@@ -172,7 +172,6 @@ export const Container = styled.div`
         gap: 64px;
         .section {
           flex-basis: 100%;
-
           width: 100%;
           .schedule {
             .text {
