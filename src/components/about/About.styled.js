@@ -12,7 +12,7 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 256px;
+    padding: 0 15vw;
 
     h1 {
       font-size: 48px;
@@ -32,7 +32,7 @@ export const Container = styled.div`
     display: flex;
     gap: 48px;
     align-items: flex-start;
-    padding: 0 256px;
+    padding: 0 15vw;
     .burner {
       display: grid;
       align-items: flex-start;
@@ -97,14 +97,15 @@ export const Container = styled.div`
   }
   .bottom {
     background: linear-gradient(to bottom, transparent 50%, #3e3038 50%);
-    padding: 80px 144px;
+    padding: 80px 0;
     .burner {
       background-color: var(--primary);
       border-radius: 8px;
       display: flex;
-      gap: 80px;
-      padding: 40px;
-      justify-content: center;
+      justify-content: space-between;
+      padding: 40px 8vw;
+      width: 90%;
+      margin: auto;
       .card {
         display: flex;
         gap: 8px;
@@ -126,6 +127,48 @@ export const Container = styled.div`
             font-size: 16px;
           }
         }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    .body {
+      flex-direction: column;
+      .burner {
+        .image {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .bottom {
+      .burner {
+        flex-direction: column;
+        gap: 10vh;
+        align-items: center;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    .top {
+      padding: 0 10vw;
+      img {
+        display: none;
+      }
+    }
+    .body {
+      padding: 0 5vw;
+
+      h1 {
+        margin-top: 24px;
+        font: 32px;
+        line-height: 40px;
+        margin-bottom: 24px;
+      }
+      button {
+        width: 100%;
       }
     }
   }

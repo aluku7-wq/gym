@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   .top {
     background: url("./images/background/footer.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
 
     .overlay {
       padding: 64px 0;
@@ -30,7 +30,7 @@ export const Container = styled.div`
         border: 2px solid var(--overlay);
         border-radius: 4px;
         padding: 2px;
-        width: 60%;
+        width: 70%;
         display: flex;
         justify-content: space-between;
         padding-left: 32px;
@@ -70,7 +70,7 @@ export const Container = styled.div`
     }
   }
   .bottom {
-    padding: 64px 200px;
+    padding: 64px 10vw;
     background: linear-gradient(to bottom, #fff, var(--overlay2));
     .body {
       display: flex;
@@ -154,6 +154,62 @@ export const Container = styled.div`
       font-weight: 500;
       margin-top: 40px;
       font-weight: 700;
+    }
+  }
+  @media (max-width: 1100px) {
+    .top {
+      .overlay {
+        .form {
+          width: 90%;
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .bottom {
+      .body {
+        flex-direction: column;
+        gap: 64px;
+        .section {
+          flex-basis: 100%;
+
+          width: 100%;
+          .schedule {
+            .text {
+              width: 100%;
+            }
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 760px) {
+    .top {
+      .overlay {
+        .form {
+          width: 90%;
+          flex-direction: column;
+          background: transparent;
+          margin-bottom: 64px;
+          align-items: center;
+          padding: 0;
+          input {
+            width: 90%;
+            padding: 16px;
+            background-color: rgba(254, 254, 254, 1);
+            margin-bottom: 64px;
+            margin-top: -32px;
+            border: 2px solid var(--overlay);
+          }
+          button {
+            width: 90%;
+            margin-bottom: -40px;
+          }
+        }
+      }
     }
   }
 `;

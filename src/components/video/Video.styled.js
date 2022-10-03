@@ -6,7 +6,7 @@ export const Container = styled.div`
   .video {
     display: grid;
     justify-content: center;
-    padding: 0 144px;
+    padding: 0 5vw;
     grid-template-areas: "video";
 
     video {
@@ -32,13 +32,31 @@ export const Container = styled.div`
 
   .burner {
     background-color: var(--primary);
-    margin: 144px;
+    margin: 144px 5vw;
     padding: 32px;
     border-radius: 8px;
     display: flex;
     justify-content: space-around;
     img {
       width: 64px;
+    }
+  }
+  @media (max-width: 800px) {
+    padding: 72px 0;
+    .video {
+      padding: 0;
+      video {
+        width: 100%;
+      }
+    }
+    .burner {
+      margin: 72px 5vw;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      img {
+        width: 80px;
+      }
     }
   }
 `;

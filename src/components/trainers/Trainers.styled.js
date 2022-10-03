@@ -5,7 +5,7 @@ export const Container = styled.div`
   background: linear-gradient(to bottom, #fff, var(--overlay4));
   display: flex;
   flex-direction: column;
-  padding: 64px 232px;
+  padding: 64px 15vw;
   gap: 40px;
   h1 {
     font-size: 40px;
@@ -83,6 +83,29 @@ export const Container = styled.div`
           text-transform: capitalize;
           color: var(--fontgray);
         }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    padding: 64px 5vw;
+    .cards_container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 64px;
+    }
+  }
+  @media (max-width: 820px) {
+    padding: 64px 5vw;
+
+    .text {
+      flex-direction: column;
+      gap: 40px;
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .statistics {
+        justify-content: left;
+        gap: 20vw;
       }
     }
   }

@@ -33,7 +33,7 @@ const Hero = () => {
             onMouseLeave={() => dispatch({ type: "EXPAND" })}>
             learn more
           </Styledelements.Button>
-          <div className="sliders">
+          {/* <div className="sliders">
             <div
               className="slider"
               onMouseEnter={() => dispatch({ type: "SHRINK" })}
@@ -46,7 +46,7 @@ const Hero = () => {
               onMouseLeave={() => dispatch({ type: "EXPAND" })}>
               <MdArrowForwardIos />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Container>

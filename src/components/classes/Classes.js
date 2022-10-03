@@ -63,6 +63,11 @@ const Classes = () => {
             </div>
           </div>
         </div>
+        <Styledelements.Button
+          onMouseEnter={() => dispatch({ type: "SHRINK" })}
+          onMouseLeave={() => dispatch({ type: "EXPAND" })}>
+          free trial
+        </Styledelements.Button>
       </div>
       <Underline />
     </Container>

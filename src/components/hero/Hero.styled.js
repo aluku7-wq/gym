@@ -7,17 +7,20 @@ export const Container = styled.div`
     url("/images/background/bg8.jpg");
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
 
   .body {
     background-size: cover;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     gap: 10vw;
-    margin-top: 8vh;
+    padding: 0 20vw;
+    padding-top: 16vh;
+
     .image {
-      max-height: 80vh;
-      margin-left: 5vw;
+      max-height: 100vh;
       img {
         width: 100%;
       }
@@ -47,6 +50,32 @@ export const Container = styled.div`
         border-radius: 50%;
         background-color: var(--overlay2);
         cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    background: linear-gradient(var(--overlay4), var(--overlay4)),
+      url("/images/background/bg9.jpg");
+    .body {
+      padding-top: 16vh;
+      .image {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 760px) {
+    background-position: center;
+    .body {
+      padding: 0 10vw;
+      padding-top: 10vh;
+      .text {
+        h1 {
+          font-size: 40px;
+          line-height: 48px;
+        }
+        button {
+          width: 100%;
+        }
       }
     }
   }

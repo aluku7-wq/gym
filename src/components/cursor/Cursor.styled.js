@@ -18,4 +18,7 @@ export const Container = styled.div`
     height: 16px;
     background-color: var(--primary);
   }
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 `;

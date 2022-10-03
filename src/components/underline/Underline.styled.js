@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 3.5px;
-  padding: 0 84px;
+  padding: 0 5vw;
   .section1 {
     flex-basis: 2.5%;
     background-color: var(--secondary);

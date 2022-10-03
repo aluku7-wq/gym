@@ -3,17 +3,16 @@
 import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
-  padding: 56px 128px;
+  padding: 56px 8vw;
   justify-content: space-between;
   align-items: baseline;
-  max-width: 1900px;
 
   .navitems {
     display: flex;
     color: var(--primary);
     font-size: 24px;
     align-items: baseline;
-    gap: 32px;
+    gap: 1vw;
     .search {
       font-size: 20px;
     }

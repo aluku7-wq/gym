@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 80px 0;
   padding-bottom: 0;
   h1 {
-    margin-left: 220px;
+    margin-left: 12vw;
     font-weight: 700;
     font-size: 48px;
     text-transform: capitalize;
@@ -22,7 +22,7 @@ export const Container = styled.div`
     grid-template-columns: repeat(3, 1fr);
     column-gap: 32px;
     row-gap: 64px;
-    padding: 88px 220px;
+    padding: 88px 12vw;
 
     .card {
       display: flex;
@@ -54,6 +54,17 @@ export const Container = styled.div`
     }
     .card:nth-of-type(odd) {
       flex-direction: column-reverse;
+    }
+  }
+  @media (max-width: 1270px) {
+    .body {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 760px) {
+    .body {
+      padding: 40px 5vw;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;
