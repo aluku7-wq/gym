@@ -1,5 +1,5 @@
 /** @format */
-import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
+// import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { Container } from "./Hero.styled";
 import { Styledelements } from "../globalsyles/Globalstyles.styled";
 import Header from "../header/Header";
