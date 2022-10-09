@@ -3,16 +3,19 @@
 import { Container } from "./Hero.styled";
 import { Styledelements } from "../globalsyles/Globalstyles.styled";
 import Header from "../header/Header";
-import { useContext } from "react";
-import { GymContext } from "../statemanager/Statemanager";
-
+// import { useContext } from "react";
+// import { GymContext } from "../statemanager/Statemanager";
+import { AnimatePresence } from "framer-motion";
 const Hero = () => {
-  const globalstate = useContext(GymContext);
-  const dispatch = globalstate.cursorDispatch;
+  // const globalstate = useContext(GymContext);
+  // const dispatch = globalstate.cursorDispatch;
 
   return (
     <Container>
-      <Header />
+      <AnimatePresence exitBeforeEnter>
+        <Header />
+      </AnimatePresence>
+
       <div className="body">
         <div className="image">
           <img src="/images/background/bg7.png" alt="" />
@@ -28,11 +31,7 @@ const Hero = () => {
             founderswanted to be the best in the industry to set minds doing so
             wonderfull job
           </Styledelements.Paragraph>
-          <Styledelements.Button
-            onMouseEnter={() => dispatch({ type: "SHRINK" })}
-            onMouseLeave={() => dispatch({ type: "EXPAND" })}>
-            learn more
-          </Styledelements.Button>
+          <Styledelements.Button>learn more</Styledelements.Button>
           {/* <div className="sliders">
             <div
               className="slider"

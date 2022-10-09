@@ -8,38 +8,38 @@ import { MdPerson } from "react-icons/md";
 import Logo from "../logo/Logo";
 import { useContext } from "react";
 import { GymContext } from "../statemanager/Statemanager";
+import { motion } from "framer-motion";
+import { headerAnimation } from "../animation/Animation";
 
 const Header = () => {
   const globalstate = useContext(GymContext);
-  const dispatch = globalstate.cursorDispatch;
+  // const dispatch = globalstate.cursorDispatch;
+
   return (
     <Container>
       <div className="logo">
         <Logo />
       </div>
       <div className="navitems">
-        <FiSearch
-          className="search"
-          onMouseEnter={() => dispatch({ type: "SHRINK" })}
-          onMouseLeave={() => dispatch({ type: "EXPAND" })}
-        />
-        <div
-          className="bag"
-          onMouseEnter={() => dispatch({ type: "SHRINK" })}
-          onMouseLeave={() => dispatch({ type: "EXPAND" })}>
+        <FiSearch className="search" />
+        <div className="bag">
           <AiTwotoneShopping />
           <p>3</p>
         </div>
-        <MdPerson
-          onMouseEnter={() => dispatch({ type: "SHRINK" })}
-          onMouseLeave={() => dispatch({ type: "EXPAND" })}
-        />
-        <div
-          className="menu"
-          onMouseEnter={() => dispatch({ type: "SHRINK" })}
-          onMouseLeave={() => dispatch({ type: "EXPAND" })}>
-          <BiMenu />
-        </div>
+        <MdPerson />
+        <motion.div
+          variants={headerAnimation().menu}
+          initial="hidden"
+          animate="show"
+          exit="hide"
+          key={"menubar"}
+          layoutId="side"
+          onClick={() => globalstate.sidedipatch({ type: "SIDE" })}
+          className="menu">
+          <p>
+            <BiMenu />
+          </p>
+        </motion.div>
       </div>
     </Container>
   );

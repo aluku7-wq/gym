@@ -6,12 +6,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyle } from "./components/globalsyles/Globalstyles.styled";
+import { Statemanager } from "./components/statemanager/Statemanager";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <App />
+    <Statemanager>
+      <App />
+    </Statemanager>
   </React.StrictMode>
 );
 

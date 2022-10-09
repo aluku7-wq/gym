@@ -13,6 +13,9 @@ export const Container = styled.div`
     transition: transform 0.1s;
     z-index: 2;
   }
+  .large_circle {
+    opacity: 0.5;
+  }
   .small_circle {
     width: 16px;
     height: 16px;

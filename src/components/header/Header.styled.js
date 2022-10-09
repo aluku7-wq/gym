@@ -15,9 +15,11 @@ export const Container = styled.div`
     gap: 1vw;
     .search {
       font-size: 20px;
+      cursor: pointer;
     }
     .bag {
       display: flex;
+      cursor: pointer;
       p {
         font-size: 10px;
         color: #fff;
@@ -42,6 +44,11 @@ export const Container = styled.div`
       justify-content: center;
       color: #fff;
       border-radius: 50%;
+      cursor: pointer;
+      p {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 `;

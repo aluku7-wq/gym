@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
 import { GymContext } from "../statemanager/Statemanager";
 import { Container } from "./Cursor.styled";
+import { cursorAnimation } from "../animation/Animation";
 
 const Cursor = () => {
   const [largecircle, setlargecircle] = useState({ x: 0, y: 0 });
@@ -22,23 +23,16 @@ const Cursor = () => {
   }, []);
   const globalstate = useContext(GymContext);
   const scaling = globalstate.cursorstate;
-
+  const cursorVariant = cursorAnimation(largecircle, smallcircle, scaling);
   return (
     <Container>
       <motion.div
-        animate={{
-          x: largecircle.x - 32,
-          y: largecircle.y - 32,
-          transition: { type: "spring", mass: 3 },
-        }}
-        className="large_circle"
-        style={{ scale: scaling ? 0.1 : 1 }}></motion.div>
+        variants={cursorVariant.large}
+        animate="show"
+        className="large_circle"></motion.div>
       <motion.div
-        animate={{
-          x: smallcircle.x - 8,
-          y: smallcircle.y - 8,
-          transition: { type: "spring", mass: 2 },
-        }}
+        variants={cursorVariant.small}
+        animate="show"
         className="small_circle"></motion.div>
     </Container>
   );
